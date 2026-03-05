@@ -1,0 +1,102 @@
+#cloud-config
+# MySQL 5.6 Replica - Cloud Init
+# Connects to master and configures replication
+
+packages:
+  - curl
+  - wget
+  - gnupg
+  - lsb-release
+  - awscli
+  - xfsprogs
+
+runcmd:
+  # Attach and mount EBS data volume
+  - |
+    until [ -b /dev/nvme1n1 ] || [ -b /dev/xvdf ]; do sleep 2; done
+    DEV="/dev/nvme1n1"
+    [ -b "$DEV" ] || DEV="/dev/xvdf"
+    if ! blkid $DEV; then
+      mkfs.xfs $DEV
+    fi
+    mkdir -p /var/lib/mysql
+    grep -q /var/lib/mysql /etc/fstab || echo "$DEV /var/lib/mysql xfs defaults,nofail 0 2" >> /etc/fstab
+    mount -a || true
+
+  # Install MySQL (same as master)
+  - |
+    wget -q https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb -O /tmp/mysql-apt-config.deb
+    DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/mysql-apt-config.deb || true
+    apt-get update -qq
+    DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server mysql-client
+  - |
+    if ! command -v mysqld &>/dev/null; then
+      DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server mysql-client
+    fi
+
+  - systemctl enable mysql
+  - systemctl stop mysql || true
+
+  # Replica server-id + Datadog DBM (performance_schema)
+  - |
+    REPLICA_ID=$((2 + ${replica_index}))
+    cat >> /etc/mysql/mysql.conf.d/mysqld.cnf << 'CNFEOF'
+
+    [mysqld]
+    server-id = REPLICA_ID_PLACEHOLDER
+    relay-log = /var/log/mysql/relay-bin
+    read_only = 1
+    bind-address = 0.0.0.0
+    performance_schema = ON
+    max_digest_length = 4096
+    performance_schema_max_digest_length = 4096
+    performance_schema_max_sql_text_length = 4096
+    CNFEOF
+    sed -i "s/REPLICA_ID_PLACEHOLDER/$REPLICA_ID/" /etc/mysql/mysql.conf.d/mysqld.cnf
+
+  - systemctl start mysql
+
+  # Set root password (needed for datadog user setup)
+  - mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '${mysql_root_password}'; FLUSH PRIVILEGES;" 2>/dev/null || true
+
+  # Wait for master to be ready and configure replication
+  - |
+    for i in $(seq 1 60); do
+      if mysqladmin -h ${mysql_master_host} -u ${mysql_replication_user} -p'${mysql_replication_password}' ping 2>/dev/null; then
+        break
+      fi
+      sleep 10
+    done
+
+  - |
+    mysql -u root -e "
+    CHANGE MASTER TO
+      MASTER_HOST='${mysql_master_host}',
+      MASTER_USER='${mysql_replication_user}',
+      MASTER_PASSWORD='${mysql_replication_password}',
+      MASTER_AUTO_POSITION=1;
+    " 2>/dev/null || mysql -u root -e "
+    CHANGE MASTER TO
+      MASTER_HOST='${mysql_master_host}',
+      MASTER_USER='${mysql_replication_user}',
+      MASTER_PASSWORD='${mysql_replication_password}';
+    "
+    mysql -u root -e "START SLAVE;"
+    mysql -u root -e "SHOW SLAVE STATUS\G" > /var/log/mysql/replication_status.txt
+
+  # Datadog DBM user (when password is set)
+  - |
+    if [ -n "${mysql_datadog_password}" ]; then
+      mysql -u root -p'${mysql_root_password}' -e "
+        CREATE USER IF NOT EXISTS 'datadog'@'%' IDENTIFIED BY '${mysql_datadog_password}';
+        GRANT REPLICATION CLIENT ON *.* TO 'datadog'@'%' WITH MAX_USER_CONNECTIONS 5;
+        GRANT PROCESS ON *.* TO 'datadog'@'%';
+        GRANT SELECT ON performance_schema.* TO 'datadog'@'%';
+        GRANT SELECT ON mysql.innodb_index_stats TO 'datadog'@'%';
+        CREATE SCHEMA IF NOT EXISTS datadog;
+        GRANT EXECUTE ON datadog.* TO 'datadog'@'%';
+        FLUSH PRIVILEGES;
+      " 2>/dev/null || true
+    fi
+
+  - touch /var/lib/mysql/.replica_configured

@@ -1,0 +1,20 @@
+# Run once: kubectl apply -f job-db-migrate.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: crm-db-migrate
+  namespace: crm
+spec:
+  ttlSecondsAfterFinished: 86400
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: migrate
+          image: 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/crm:latest
+          command: ["bundle", "exec", "rails", "db:migrate"]
+          envFrom:
+            - configMapRef:
+                name: crm-config
+            - secretRef:
+                name: crm-secrets

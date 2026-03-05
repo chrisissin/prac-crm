@@ -1,0 +1,18 @@
+# Public LoadBalancer for testing - CRM reachable at the ELB hostname
+# Keep ClusterIP service for internal/ingress; this adds direct public access
+apiVersion: v1
+kind: Service
+metadata:
+  name: crm-public
+  namespace: crm
+  labels:
+    app: crm
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+      name: http
+  selector:
+    app: crm

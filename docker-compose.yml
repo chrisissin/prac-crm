@@ -1,0 +1,57 @@
+# Local development - MySQL 5.6 + Rails (all in Docker)
+# Usage: ./scripts/setup-local.sh  (or docker compose up after first setup)
+
+services:
+  mysql:
+    image: mysql:5.6
+    platform: linux/amd64  # MySQL 5.6 has no arm64 image; use emulation on Apple Silicon
+    container_name: crm-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: crm_development
+      MYSQL_USER: crm_app
+      MYSQL_PASSWORD: crm_dev_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker-compose.mysql-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  crm:
+    build:
+      context: ./crm
+      dockerfile: Dockerfile.dev
+      args:
+        RUBY_IMAGE: ${RUBY_IMAGE:-ruby:3.2-alpine}
+    image: crm:dev
+    container_name: crm-app
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      RAILS_ENV: development
+      WEB_CONCURRENCY: 0
+      MARIADB_TLS_DISABLE_PEER_VERIFICATION: "1"  # MySQL 5.6 has no SSL; Connector/C 3.4+ requires it otherwise
+      DATABASE_HOST: mysql
+      DATABASE_PORT: 3306
+      DATABASE_USERNAME: crm_app
+      DATABASE_PASSWORD: crm_dev_password
+      DATABASE_NAME: crm_development
+      SECRET_KEY_BASE: dev_secret_key_base_min_32_chars_long
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./crm:/app
+      - crm_bundle:/usr/bundle
+    command: bundle exec puma -C config/puma.rb -b tcp://0.0.0.0:3000
+
+volumes:
+  mysql_data:
+  crm_bundle:

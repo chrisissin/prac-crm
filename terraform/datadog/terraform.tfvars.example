@@ -1,0 +1,21 @@
+# Copy to terraform.tfvars
+# Get keys from: https://app.datadoghq.com/organization-settings/api-keys
+
+# Required - from Datadog UI
+# datadog_api_key = "xxx"
+# datadog_app_key = "xxx"
+
+# EKS cluster (must exist)
+cluster_name = "my-eks-cluster"
+
+# MySQL hosts - from terraform/mysql output
+# mysql_master_host = "10.0.1.50"
+# mysql_replica_hosts = ["10.0.2.50"]
+
+# Datadog user password (must match terraform/mysql mysql_datadog_password)
+# mysql_datadog_password = "xxx"
+
+# Optional
+datadog_site = "datadoghq.com"
+environment  = "prod"
+namespace    = "datadog"

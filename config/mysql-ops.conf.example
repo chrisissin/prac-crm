@@ -1,0 +1,18 @@
+# MySQL Operations Configuration
+# Copy to mysql-ops.conf and adjust
+
+# Connection (for backup/monitor when running remotely)
+MYSQL_USER="root"
+MYSQL_PASSWORD="your-password"
+MYSQL_HOST="localhost"
+MYSQL_PORT="3306"
+MYSQL_SOCKET="/var/run/mysqld/mysqld.sock"
+
+# Backup
+BACKUP_DIR="/backup/mysql"
+S3_BUCKET="crm-prod-mysql-backup-123456789"  # From Terraform output
+RETENTION_DAYS="30"
+
+# Alerts
+ALERT_EMAIL="ops@example.com"
+SLACK_WEBHOOK="https://hooks.slack.com/services/xxx/yyy/zzz"

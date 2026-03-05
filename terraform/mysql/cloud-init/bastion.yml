@@ -1,0 +1,25 @@
+#cloud-config
+# Bastion / Jump host - Install kubectl and (optionally) configure kubeconfig for EKS
+package_update: true
+package_upgrade: false
+packages:
+  - curl
+  - awscli
+
+runcmd:
+  # Install kubectl (static binary - no apt repo needed)
+  - |
+    KUBE_VER=$(curl -L -s https://dl.k8s.io/release/stable.txt)
+    curl -LO "https://dl.k8s.io/release/$${KUBE_VER}/bin/linux/amd64/kubectl"
+    chmod +x kubectl
+    mv kubectl /usr/local/bin/
+    kubectl version --client 2>/dev/null || true
+
+  # Configure kubeconfig for EKS if cluster name is set
+  - |
+    if [ -n "${eks_cluster_name}" ]; then
+      aws eks update-kubeconfig --region ${aws_region} --name ${eks_cluster_name}
+      echo "kubeconfig configured for ${eks_cluster_name}"
+    else
+      echo "eks_cluster_name not set - run: aws eks update-kubeconfig --region ${aws_region} --name <cluster>"
+    fi

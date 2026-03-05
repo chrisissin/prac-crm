@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crm-config
+  namespace: crm
+data:
+  RAILS_ENV: "production"
+  RAILS_MAX_THREADS: "5"
+  DATABASE_PORT: "3306"
+  DATABASE_NAME: "crm_production"
+  MARIADB_TLS_DISABLE_PEER_VERIFICATION: "1"  # MySQL 5.6 has no SSL
+  # DATABASE_USERNAME and DATABASE_PASSWORD from Secret

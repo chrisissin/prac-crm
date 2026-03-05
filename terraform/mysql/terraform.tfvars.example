@@ -1,0 +1,27 @@
+# Copy to terraform.tfvars and fill in values
+# Do not commit terraform.tfvars with secrets!
+
+aws_region   = "ap-northeast-2"
+environment  = "prod"
+project_name = "crm"
+
+# Get AZs: aws ec2 describe-availability-zones --query 'AvailabilityZones[*].ZoneName'
+availability_zones = ["ap-northeast-2a", "ap-northeast-2b"]
+
+# Bastion: EKS cluster name for kubectl on bastion (optional)
+# eks_cluster_name = "my-eks-cluster"
+
+# SSH public key - use TF_VAR (required): export TF_VAR_ssh_public_key="$(cat ~/.ssh/id_rsa.pub)"
+# Or set here (single line, no newlines): ssh_public_key = "ssh-rsa AAAA... comment"
+
+# If IAM lacks ec2:DescribeImages, set a specific Ubuntu 20.04 AMI (region-specific):
+# mysql_master_ami = "ami-0..."  # Get from: aws ec2 describe-images --owners 099720109477 --query 'Images[?contains(Name,`ubuntu-focal-20.04`)][0].ImageId' --output text
+
+# MySQL credentials - use TF_VAR or sensitive backend
+# export TF_VAR_mysql_root_password="..."
+# export TF_VAR_mysql_replication_password="..."
+# export TF_VAR_mysql_app_password="..."
+# export TF_VAR_mysql_datadog_password="..."   # For Datadog DBM (optional)
+# export TF_VAR_ssh_public_key="$(cat ~/.ssh/id_rsa.pub)"
+
+mysql_replica_count = 1

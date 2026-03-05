@@ -1,0 +1,125 @@
+#cloud-config
+# MySQL 5.6 Master - Cloud Init
+# Runs on first boot to install and configure MySQL master for replication
+
+packages:
+  - curl
+  - wget
+  - gnupg
+  - lsb-release
+  - awscli
+  - xfsprogs
+
+runcmd:
+  # Attach and mount EBS data volume
+  - |
+    until [ -b /dev/nvme1n1 ] || [ -b /dev/xvdf ]; do sleep 2; done
+    DEV="/dev/nvme1n1"
+    [ -b "$DEV" ] || DEV="/dev/xvdf"
+    if ! blkid $DEV; then
+      mkfs.xfs $DEV
+    fi
+    mkdir -p /var/lib/mysql
+    grep -q /var/lib/mysql /etc/fstab || echo "$DEV /var/lib/mysql xfs defaults,nofail 0 2" >> /etc/fstab
+    mount -a || true
+
+  # Install MySQL 5.6 from Oracle repo
+  - |
+    wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb -O /tmp/mysql-apt-config.deb
+    DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/mysql-apt-config.deb || true
+    echo "mysql-apt-config mysql-apt-config/select-server select mysql-5.6" | debconf-set-selections
+    apt-get update -qq
+    DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server mysql-client
+
+  # Or use MySQL 5.7 if 5.6 not available (fallback)
+  - |
+    if ! command -v mysqld &>/dev/null; then
+      DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server-5.7 mysql-client-5.7 || apt-get install -y mysql-server mysql-client
+    fi
+
+  - systemctl enable mysql
+  - systemctl start mysql || true
+
+  # Configure MySQL master for replication
+  - |
+    cat > /tmp/mysql_setup.sql << 'MYSQL_EOF'
+    -- Root password
+    ALTER USER 'root'@'localhost' IDENTIFIED BY '${mysql_root_password}';
+    FLUSH PRIVILEGES;
+
+    -- Replication user
+    CREATE USER IF NOT EXISTS '${mysql_replication_user}'@'%' IDENTIFIED BY '${mysql_replication_password}';
+    GRANT REPLICATION SLAVE ON *.* TO '${mysql_replication_user}'@'%';
+    FLUSH PRIVILEGES;
+
+    -- App database and user
+    CREATE DATABASE IF NOT EXISTS ${mysql_database_name} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    CREATE USER IF NOT EXISTS '${mysql_app_username}'@'%' IDENTIFIED BY '${mysql_app_password}';
+    GRANT ALL PRIVILEGES ON ${mysql_database_name}.* TO '${mysql_app_username}'@'%';
+    FLUSH PRIVILEGES;
+    MYSQL_EOF
+
+  - mysql -u root -p'${mysql_root_password}' < /tmp/mysql_setup.sql 2>/dev/null || mysql -u root -e "SOURCE /tmp/mysql_setup.sql;" 2>/dev/null || true
+  - rm -f /tmp/mysql_setup.sql /tmp/mysql-apt-config.deb
+
+  # Configure my.cnf for replication + Datadog DBM (performance_schema)
+  - |
+    cat >> /etc/mysql/mysql.conf.d/mysqld.cnf << 'EOF'
+
+    [mysqld]
+    # Replication Master
+    server-id = 1
+    log_bin = /var/log/mysql/mysql-bin.log
+    binlog_format = ROW
+    expire_logs_days = 7
+    max_binlog_size = 100M
+    bind-address = 0.0.0.0
+
+    # Datadog DBM - Performance Schema
+    performance_schema = ON
+    max_digest_length = 4096
+    performance_schema_max_digest_length = 4096
+    performance_schema_max_sql_text_length = 4096
+    EOF
+    systemctl restart mysql
+
+  # Datadog DBM user and procedures (when password is set)
+  - |
+    if [ -n "${mysql_datadog_password}" ]; then
+      cat > /tmp/datadog_setup.sql << 'DDEOF'
+    CREATE USER IF NOT EXISTS 'datadog'@'%' IDENTIFIED BY '${mysql_datadog_password}';
+    GRANT REPLICATION CLIENT ON *.* TO 'datadog'@'%' WITH MAX_USER_CONNECTIONS 5;
+    GRANT PROCESS ON *.* TO 'datadog'@'%';
+    GRANT SELECT ON performance_schema.* TO 'datadog'@'%';
+    GRANT SELECT ON mysql.innodb_index_stats TO 'datadog'@'%';
+    CREATE SCHEMA IF NOT EXISTS datadog;
+    GRANT EXECUTE ON datadog.* TO 'datadog'@'%';
+    FLUSH PRIVILEGES;
+
+    DELIMITER $$
+    CREATE PROCEDURE IF NOT EXISTS datadog.explain_statement(IN query TEXT)
+        SQL SECURITY DEFINER
+    BEGIN
+        SET @explain := CONCAT('EXPLAIN FORMAT=json ', query);
+        PREPARE stmt FROM @explain;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+    END $$
+    DELIMITER ;
+
+    DELIMITER $$
+    CREATE PROCEDURE IF NOT EXISTS datadog.enable_events_statements_consumers()
+        SQL SECURITY DEFINER
+    BEGIN
+        UPDATE performance_schema.setup_consumers SET enabled='YES' WHERE name LIKE 'events_statements_%';
+        UPDATE performance_schema.setup_consumers SET enabled='YES' WHERE name = 'events_waits_current';
+    END $$
+    DELIMITER ;
+    GRANT EXECUTE ON PROCEDURE datadog.enable_events_statements_consumers TO 'datadog'@'%';
+    DDEOF
+      mysql -u root -p'${mysql_root_password}' < /tmp/datadog_setup.sql 2>/dev/null || true
+      rm -f /tmp/datadog_setup.sql
+    fi
+
+  # Create bootstrap marker
+  - touch /var/lib/mysql/.master_configured
