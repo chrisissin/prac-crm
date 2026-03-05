@@ -1,0 +1,1516 @@
+  [1m[35m (106.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (106.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (103.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.3ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (109.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (106.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (109.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (106.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (102.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.3ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (103.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (106.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (106.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.3ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (105.8ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.7ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (103.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (104.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (107.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (103.6ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:22:36 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:22:36 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+  [1m[35m (108.0ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (108.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:25:38 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:25:38 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:25:39 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:25:40 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:25:40 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:25:41 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:26:35 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:26:35 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:26:37 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:26:37 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:26:38 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:26:38 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:26:40 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:26:40 +0000
+  
+ActiveRecord::ConnectionNotEstablished (TLS/SSL error: SSL is required, but the server does not support it):
+
+Causes:
+Mysql2::Error::ConnectionError (TLS/SSL error: SSL is required, but the server does not support it)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:152:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:161:in `block in reconnect'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:158:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:707:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:255:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/mysql/schema_statements.rb:237:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+  [1m[35m (105.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2026-03-04 17:30:29.669610', '2026-03-04 17:30:29.669613')[0m
+Migrating to CreateUsers (20240301000001)
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `password_digest` varchar(255), `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000001')[0m
+Migrating to CreateAccounts (20240301000002)
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `industry` varchar(255), `phone` varchar(255), `email` varchar(255), `address` text, `status` int DEFAULT 0, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000002')[0m
+Migrating to CreateContacts (20240301000003)
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE `contacts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `account_id` bigint, `first_name` varchar(255) NOT NULL, `last_name` varchar(255) NOT NULL, `title` varchar(255), `email` varchar(255) NOT NULL, `phone` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_contacts_on_account_id` (`account_id`), CONSTRAINT `fk_rails_e4cf502667`
+FOREIGN KEY (`account_id`)
+  REFERENCES `accounts` (`id`)
+)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000003')[0m
+Migrating to CreateLeads (20240301000004)
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE `leads` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `first_name` varchar(255) NOT NULL, `last_name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `company` varchar(255), `phone` varchar(255), `status` int DEFAULT 0, `source` int DEFAULT 0, `notes` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000004')[0m
+Migrating to CreateDeals (20240301000005)
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE `deals` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `account_id` bigint, `contact_id` bigint, `name` varchar(255) NOT NULL, `value` decimal(12,2) DEFAULT 0.0, `stage` int DEFAULT 0, `expected_close_date` date, `notes` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_deals_on_account_id` (`account_id`), INDEX `index_deals_on_contact_id` (`contact_id`), CONSTRAINT `fk_rails_1067415e29`
+FOREIGN KEY (`account_id`)
+  REFERENCES `accounts` (`id`)
+, CONSTRAINT `fk_rails_516be0baca`
+FOREIGN KEY (`contact_id`)
+  REFERENCES `contacts` (`id`)
+)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000005')[0m
+Migrating to CreateActivities (20240301000006)
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE `activities` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `activityable_type` varchar(255) NOT NULL, `activityable_id` bigint NOT NULL, `activity_type` int NOT NULL, `subject` varchar(255) NOT NULL, `description` text, `due_at` datetime(6), `status` int DEFAULT 0, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240301000006')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:30:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DashboardController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 172.20.0.1 at 2026-03-04 17:30:32 +0000
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 172.20.0.1 at 2026-03-04 17:30:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/login" for 172.20.0.1 at 2026-03-04 17:30:56 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"in8jy3_Ff8y-16Tis_zuKRzDsJHYs4XXsLbx0wTqGDuxS72GZ8MQtBh_52OJtrg9OQ9tY64YEa1quQMe39rJfw", "email"=>"admin@crm.local", "password"=>"changeme", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started POST "/login" for 172.20.0.1 at 2026-03-04 17:31:06 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"m1iIBV9qNQSqUggE-PjWqZonzC8zp_uYFhhMzpkV81ygbBZIR2xafAz6S4XCsoC9v-sR3UUMb-LMF74DQiUiGA", "email"=>"admin@crm.local", "password"=>"changeme", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (19.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  [1m[36mUser Create (5.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `name`, `created_at`, `updated_at`) VALUES ('admin@crm.local', '$2a$12$Ymrg6vRASY8JV1H3VjSmkeZEawkxk3Uqo7/ERNsEy5JC5RYvoGCW6', 'Admin', '2026-03-04 17:34:19.814118', '2026-03-04 17:34:19.814118')[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (8.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$BD3a5O.Ipnci5g03liE59elNUQWB9prrRRyRvSJNupxauqy7Anbxa', `users`.`updated_at` = '2026-03-04 17:34:20.066234' WHERE `users`.`id` = 1[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/login" for 172.20.0.1 at 2026-03-04 17:34:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"m1iIBV9qNQSqUggE-PjWqZonzC8zp_uYFhhMzpkV81ygbBZIR2xafAz6S4XCsoC9v-sR3UUMb-LMF74DQiUiGA", "email"=>"admin@crm.local", "password"=>"changeme", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 256ms (ActiveRecord: 3.3ms (1 query, 0 cached) | GC: 4.3ms)
+
+
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:34:28 +0000
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :status, {:prospect=>0, :active=>1, :inactive=>2}
+ (called from <class:Account> at /app/app/models/account.rb:4)
+  [1m[36mAccount Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `accounts`[0m
+  [1m[36mContact Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `contacts`[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :stage, {:qualification=>0, :proposal=>1, :negotiation=>2, :closed_won=>3, :closed_lost=>4}
+ (called from <class:Deal> at /app/app/models/deal.rb:5)
+  [1m[36mDeal Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `deals`[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.6ms (4 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ArgumentError (You tried to define an enum named "status" on the model "Lead", but this will generate a class method "new", which is already defined by Active Record.):
+  
+app/models/lead.rb:2:in `<class:Lead>'
+app/models/lead.rb:1:in `<top (required)>'
+app/controllers/dashboard_controller.rb:8:in `index'
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE DATABASE `crm_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE `crm_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@crm.local' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$2CHiV1Iut5aeF4c4Ki0See2VL/cDD19yF49xLtbhmjH0N.3fzjrDm', `users`.`updated_at` = '2026-03-04 17:35:16.918840' WHERE `users`.`id` = 1[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1238191469607641430', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1238191469607641430')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 172.20.0.1 at 2026-03-04 17:35:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :status, {:prospect=>0, :active=>1, :inactive=>2}
+ (called from <class:Account> at /app/app/models/account.rb:4)
+  [1m[36mAccount Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `accounts`[0m
+  [1m[36mContact Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `contacts`[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :stage, {:qualification=>0, :proposal=>1, :negotiation=>2, :closed_won=>3, :closed_lost=>4}
+ (called from <class:Deal> at /app/app/models/deal.rb:5)
+  [1m[36mDeal Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `deals`[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :status, {:new_lead=>0, :contacted=>1, :qualified=>2, :converted=>3, :lost=>4}
+ (called from <class:Lead> at /app/app/models/lead.rb:2)
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :source, {:website=>0, :referral=>1, :cold_call=>2, :event=>3, :other=>4}
+ (called from <class:Lead> at /app/app/models/lead.rb:3)
+  [1m[36mLead Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  [1m[36mDeal Sum (0.5ms)[0m  [1m[34mSELECT SUM(`deals`.`value`) FROM `deals`[0m
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.1ms)
+Completed 200 OK in 62ms (Views: 8.4ms | ActiveRecord: 5.0ms (6 queries, 0 cached) | GC: 5.7ms)
+
+
+Started GET "/contacts/new" for 172.20.0.1 at 2026-03-04 17:35:23 +0000
+Processing by ContactsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts` ORDER BY `accounts`.`name` ASC[0m
+  Rendered contacts/_form.html.erb (Duration: 34.2ms | GC: 24.8ms)
+  Rendered contacts/new.html.erb within layouts/application (Duration: 35.3ms | GC: 25.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | GC: 25.0ms)
+Completed 200 OK in 43ms (Views: 35.6ms | ActiveRecord: 1.6ms (2 queries, 0 cached) | GC: 25.3ms)
+
+
+Started POST "/contacts" for 172.20.0.1 at 2026-03-04 17:35:31 +0000
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"AVgYRHFwTTdO7qgPqHdXjcEiUIstXxp4MeiizO8X3dkytuoX4xc-4wClBxA2UYsCeR3RXzM8cDORNeaRVW2_iQ", "contact"=>{"first_name"=>"CHRIS", "last_name"=>"Ho", "email"=>"chrisissin@gmail.com", "phone"=>"7783213124", "title"=>"", "account_id"=>""}, "commit"=>"Create Contact"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (1.5ms)[0m  [1m[32mINSERT INTO `contacts` (`account_id`, `first_name`, `last_name`, `title`, `email`, `phone`, `created_at`, `updated_at`) VALUES (NULL, 'CHRIS', 'Ho', '', 'chrisissin@gmail.com', '7783213124', '2026-03-04 17:35:31.066222', '2026-03-04 17:35:31.066222')[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contacts/1
+Completed 302 Found in 8ms (ActiveRecord: 4.9ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/contacts/1" for 172.20.0.1 at 2026-03-04 17:35:31 +0000
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/show.html.erb within layouts/application
+  Rendered contacts/show.html.erb within layouts/application (Duration: 5.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/activities/new?activityable_id=1&activityable_type=Contact" for 172.20.0.1 at 2026-03-04 17:35:48 +0000
+Processing by ActivitiesController#new as HTML
+  Parameters: {"activityable_id"=>"1", "activityable_type"=>"Contact"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :activity_type, {:call=>0, :meeting=>1, :email=>2, :task=>3}
+ (called from <class:Activity> at /app/app/models/activity.rb:3)
+DEPRECATION WARNING: Defining enums with keyword arguments is deprecated and will be removed
+in Rails 8.0. Positional arguments should be used instead:
+
+enum :status, {:scheduled=>0, :completed=>1, :cancelled=>2}
+ (called from <class:Activity> at /app/app/models/activity.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering activities/new.html.erb within layouts/application
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 1 LIMIT 1[0m
+  Rendered activities/_form.html.erb (Duration: 12.8ms | GC: 1.1ms)
+  Rendered activities/new.html.erb within layouts/application (Duration: 14.2ms | GC: 1.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | GC: 1.1ms)
+Completed 200 OK in 36ms (Views: 16.0ms | ActiveRecord: 3.1ms (2 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/deals" for 172.20.0.1 at 2026-03-04 17:35:54 +0000
+Processing by DealsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering deals/index.html.erb within layouts/application
+  [1m[36mDeal Load (0.8ms)[0m  [1m[34mSELECT `deals`.* FROM `deals` ORDER BY `deals`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  Rendered deals/index.html.erb within layouts/application (Duration: 8.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.2ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/deals/new" for 172.20.0.1 at 2026-03-04 17:35:57 +0000
+Processing by DealsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering deals/new.html.erb within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts` ORDER BY `accounts`.`name` ASC[0m
+  [1m[36mContact Load (1.3ms)[0m  [1m[34mSELECT `contacts`.* FROM `contacts` ORDER BY `contacts`.`last_name` ASC[0m
+  Rendered deals/_form.html.erb (Duration: 7.6ms | GC: 0.0ms)
+  Rendered deals/new.html.erb within layouts/application (Duration: 9.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 8.6ms | ActiveRecord: 2.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/deals" for 172.20.0.1 at 2026-03-04 17:36:08 +0000
+Processing by DealsController#create as HTML
+  Parameters: {"authenticity_token"=>"Mt-JpOUfYpMjvxSRhOnFG48jHSsbVE3A_2_fddHadSDCGSMXtqwoEVBh9p_Xn_YkKdfW0iLYOy3UhR-AvFRqXA", "deal"=>{"name"=>"abc", "value"=>"0.0", "stage"=>"qualification", "expected_close_date"=>"2026-03-12", "account_id"=>"", "contact_id"=>"", "notes"=>""}, "commit"=>"Create Deal"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDeal Create (1.2ms)[0m  [1m[32mINSERT INTO `deals` (`account_id`, `contact_id`, `name`, `value`, `stage`, `expected_close_date`, `notes`, `created_at`, `updated_at`) VALUES (NULL, NULL, 'abc', 0.0, 0, '2026-03-12', '', '2026-03-04 17:36:08.244321', '2026-03-04 17:36:08.244321')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/deals/1
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/deals/1" for 172.20.0.1 at 2026-03-04 17:36:08 +0000
+Processing by DealsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDeal Load (0.6ms)[0m  [1m[34mSELECT `deals`.* FROM `deals` WHERE `deals`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering deals/show.html.erb within layouts/application
+  Rendered deals/show.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+

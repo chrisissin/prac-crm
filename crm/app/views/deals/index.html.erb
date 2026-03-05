@@ -1,0 +1,30 @@
+<h1>Deals</h1>
+<div class="card">
+  <p><%= link_to "New Deal", new_deal_path, class: "btn btn-primary" %></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+        <th>Stage</th>
+        <th>Account</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @deals.each do |d| %>
+        <tr>
+          <td><%= link_to d.name, d %></td>
+          <td><%= number_to_currency(d.value) %></td>
+          <td><%= d.stage.titleize %></td>
+          <td><%= d.account&.name || "-" %></td>
+          <td>
+            <%= link_to "Edit", edit_deal_path(d), class: "btn btn-secondary" %>
+            <%= button_to "Delete", d, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination"><%= paginate @deals %></div>
+</div>

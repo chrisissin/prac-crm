@@ -1,0 +1,26 @@
+<%= form_with model: @activity do |f| %>
+  <%= f.hidden_field :activityable_type %>
+  <%= f.hidden_field :activityable_id %>
+  <div class="form-group">
+    <%= f.label :subject %>
+    <%= f.text_field :subject, required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :activity_type %>
+    <%= f.select :activity_type, Activity.activity_types.keys.map { |k| [k.titleize, k] } %>
+  </div>
+  <div class="form-group">
+    <%= f.label :status %>
+    <%= f.select :status, Activity.statuses.keys.map { |k| [k.titleize, k] } %>
+  </div>
+  <div class="form-group">
+    <%= f.label :due_at %>
+    <%= f.datetime_local_field :due_at %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, rows: 3 %>
+  </div>
+  <%= f.submit class: "btn btn-primary" %>
+  <%= link_to "Cancel", @activity.activityable ? polymorphic_path(@activity.activityable) : activities_path, class: "btn btn-secondary" %>
+<% end %>

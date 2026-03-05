@@ -1,0 +1,28 @@
+<h1><%= @account.name %></h1>
+<div class="card">
+  <p><strong>Industry:</strong> <%= @account.industry || "-" %></p>
+  <p><strong>Email:</strong> <%= @account.email || "-" %></p>
+  <p><strong>Phone:</strong> <%= @account.phone || "-" %></p>
+  <p><strong>Status:</strong> <%= @account.status.titleize %></p>
+  <p><strong>Address:</strong> <%= simple_format(@account.address) || "-" %></p>
+  <p>
+    <%= link_to "Edit", edit_account_path(@account), class: "btn btn-primary" %>
+    <%= button_to "Delete", @account, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+  </p>
+</div>
+<% if @contacts.any? %>
+  <h2>Contacts</h2>
+  <div class="card">
+    <% @contacts.each do |c| %>
+      <p><%= link_to c.full_name, c %></p>
+    <% end %>
+  </div>
+<% end %>
+<% if @deals.any? %>
+  <h2>Deals</h2>
+  <div class="card">
+    <% @deals.each do |d| %>
+      <p><%= link_to "#{d.name} (#{number_to_currency(d.value)})", d %></p>
+    <% end %>
+  </div>
+<% end %>

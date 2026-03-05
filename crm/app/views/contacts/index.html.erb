@@ -1,0 +1,28 @@
+<h1>Contacts</h1>
+<div class="card">
+  <p><%= link_to "New Contact", new_contact_path, class: "btn btn-primary" %></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Account</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |c| %>
+        <tr>
+          <td><%= link_to c.full_name, c %></td>
+          <td><%= c.email %></td>
+          <td><%= c.account&.name || "-" %></td>
+          <td>
+            <%= link_to "Edit", edit_contact_path(c), class: "btn btn-secondary" %>
+            <%= button_to "Delete", c, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination"><%= paginate @contacts %></div>
+</div>

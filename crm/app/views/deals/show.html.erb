@@ -1,0 +1,14 @@
+<h1><%= @deal.name %></h1>
+<div class="card">
+  <p><strong>Value:</strong> <%= number_to_currency(@deal.value) %></p>
+  <p><strong>Stage:</strong> <%= @deal.stage.titleize %></p>
+  <p><strong>Expected Close:</strong> <%= @deal.expected_close_date || "-" %></p>
+  <p><strong>Account:</strong> <%= @deal.account ? link_to(@deal.account.name, @deal.account) : "-" %></p>
+  <p><strong>Contact:</strong> <%= @deal.contact ? link_to(@deal.contact.full_name, @deal.contact) : "-" %></p>
+  <p><strong>Notes:</strong> <%= simple_format(@deal.notes) || "-" %></p>
+  <p>
+    <%= link_to "Edit", edit_deal_path(@deal), class: "btn btn-primary" %>
+    <%= link_to "New Activity", new_activity_path(activityable_type: "Deal", activityable_id: @deal.id), class: "btn btn-secondary" %>
+    <%= button_to "Delete", @deal, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+  </p>
+</div>

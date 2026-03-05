@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "fileutils"
+APP_ROOT = File.expand_path("..", __dir__)
+FileUtils.chdir APP_ROOT
+system "bundle install"
+system "bundle exec rails db:create db:migrate"
+puts "Setup complete."

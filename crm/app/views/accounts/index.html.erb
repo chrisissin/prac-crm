@@ -1,0 +1,28 @@
+<h1>Accounts</h1>
+<div class="card">
+  <p><%= link_to "New Account", new_account_path, class: "btn btn-primary" %></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Industry</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @accounts.each do |a| %>
+        <tr>
+          <td><%= link_to a.name, a %></td>
+          <td><%= a.industry || "-" %></td>
+          <td><%= a.status.titleize %></td>
+          <td>
+            <%= link_to "Edit", edit_account_path(a), class: "btn btn-secondary" %>
+            <%= button_to "Delete", a, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination"><%= paginate @accounts %></div>
+</div>

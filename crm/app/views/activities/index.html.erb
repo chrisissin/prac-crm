@@ -1,0 +1,31 @@
+<h1>Activities</h1>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Type</th>
+        <th>Related To</th>
+        <th>Due</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @activities.each do |a| %>
+        <tr>
+          <td><%= link_to a.subject, a %></td>
+          <td><%= a.activity_type.titleize %></td>
+          <td><%= a.activityable_type %> #<%= a.activityable_id %></td>
+          <td><%= a.due_at&.strftime("%Y-%m-%d %H:%M") || "-" %></td>
+          <td><%= a.status.titleize %></td>
+          <td>
+            <%= link_to "Edit", edit_activity_path(a), class: "btn btn-secondary" %>
+            <%= button_to "Delete", a, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination"><%= paginate @activities %></div>
+</div>

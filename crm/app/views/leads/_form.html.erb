@@ -1,0 +1,36 @@
+<%= form_with model: @lead do |f| %>
+  <div class="form-group">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :company %>
+    <%= f.text_field :company %>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone %>
+    <%= f.telephone_field :phone %>
+  </div>
+  <div class="form-group">
+    <%= f.label :status %>
+    <%= f.select :status, Lead.statuses.keys.map { |k| [k.titleize, k] } %>
+  </div>
+  <div class="form-group">
+    <%= f.label :source %>
+    <%= f.select :source, Lead.sources.keys.map { |k| [k.titleize, k] } %>
+  </div>
+  <div class="form-group">
+    <%= f.label :notes %>
+    <%= f.text_area :notes, rows: 3 %>
+  </div>
+  <%= f.submit class: "btn btn-primary" %>
+  <%= link_to "Cancel", @lead.persisted? ? @lead : leads_path, class: "btn btn-secondary" %>
+<% end %>

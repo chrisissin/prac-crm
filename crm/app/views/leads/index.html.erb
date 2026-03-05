@@ -1,0 +1,30 @@
+<h1>Leads</h1>
+<div class="card">
+  <p><%= link_to "New Lead", new_lead_path, class: "btn btn-primary" %></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Company</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @leads.each do |l| %>
+        <tr>
+          <td><%= link_to l.full_name, l %></td>
+          <td><%= l.email %></td>
+          <td><%= l.company || "-" %></td>
+          <td><%= l.status.titleize %></td>
+          <td>
+            <%= link_to "Edit", edit_lead_path(l), class: "btn btn-secondary" %>
+            <%= button_to "Delete", l, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination"><%= paginate @leads %></div>
+</div>

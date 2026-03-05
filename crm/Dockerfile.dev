@@ -1,0 +1,20 @@
+# Override if Docker Hub 502: docker compose build --build-arg RUBY_IMAGE=ruby:3.2.3-alpine
+ARG RUBY_IMAGE=ruby:3.2-alpine
+FROM ${RUBY_IMAGE}
+
+RUN apk add --no-cache build-base mariadb-dev mariadb-client tzdata yaml-dev
+
+WORKDIR /app
+
+COPY Gemfile* ./
+RUN bundle config set --local path '/usr/bundle' && bundle install
+
+COPY docker-compose.dev-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENV BUNDLE_PATH=/usr/bundle
+ENV RAILS_ENV=development
+EXPOSE 3000
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb", "-b", "0.0.0.0"]

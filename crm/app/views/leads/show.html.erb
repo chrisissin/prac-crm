@@ -1,0 +1,13 @@
+<h1><%= @lead.full_name %></h1>
+<div class="card">
+  <p><strong>Email:</strong> <%= @lead.email %></p>
+  <p><strong>Company:</strong> <%= @lead.company || "-" %></p>
+  <p><strong>Phone:</strong> <%= @lead.phone || "-" %></p>
+  <p><strong>Status:</strong> <%= @lead.status.titleize %></p>
+  <p><strong>Source:</strong> <%= @lead.source.titleize %></p>
+  <p><strong>Notes:</strong> <%= simple_format(@lead.notes) || "-" %></p>
+  <p>
+    <%= link_to "Edit", edit_lead_path(@lead), class: "btn btn-primary" %>
+    <%= button_to "Delete", @lead, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+  </p>
+</div>

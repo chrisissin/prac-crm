@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRM</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <style>
+      * { box-sizing: border-box; }
+      body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: #f4f6f9; }
+      .nav { background: #1e293b; color: white; padding: 1rem 2rem; display: flex; gap: 1.5rem; align-items: center; }
+      .nav a { color: #94a3b8; text-decoration: none; }
+      .nav a:hover { color: white; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+      .card { background: white; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: .75rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+      th { background: #f8fafc; font-weight: 600; }
+      .btn { display: inline-block; padding: .5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 14px; cursor: pointer; border: none; }
+      .btn-primary { background: #3b82f6; color: white; }
+      .btn-secondary { background: #e2e8f0; color: #334155; }
+      .btn-danger { background: #ef4444; color: white; }
+      .notice, .alert { padding: 1rem; border-radius: 6px; margin-bottom: 1rem; }
+      .notice { background: #d1fae5; color: #065f46; }
+      .alert { background: #fee2e2; color: #991b1b; }
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+      .stat { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+      .stat span { display: block; font-size: 1.5rem; font-weight: 700; color: #3b82f6; }
+      .form-group { margin-bottom: 1rem; }
+      .form-group label { display: block; margin-bottom: .25rem; font-weight: 500; }
+      .form-group input, .form-group select, .form-group textarea { width: 100%; max-width: 400px; padding: .5rem; border: 1px solid #cbd5e1; border-radius: 6px; }
+      .pagination { margin-top: 1rem; }
+      .pagination a, .pagination span { padding: .5rem .75rem; margin-right: .25rem; background: #e2e8f0; border-radius: 4px; text-decoration: none; }
+      .pagination .current { background: #3b82f6; color: white; }
+    </style>
+  </head>
+  <body>
+    <% if logged_in? %>
+      <nav class="nav">
+        <%= link_to "CRM", root_path %>
+        <%= link_to "Dashboard", dashboard_path %>
+        <%= link_to "Accounts", accounts_path %>
+        <%= link_to "Contacts", contacts_path %>
+        <%= link_to "Deals", deals_path %>
+        <%= link_to "Leads", leads_path %>
+        <%= link_to "Activities", activities_path %>
+        <span style="margin-left: auto"><%= current_user.email %></span>
+        <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-secondary", style: "margin: 0" %>
+      </nav>
+    <% end %>
+    <main class="container">
+      <% if flash[:notice] %><div class="notice"><%= flash[:notice] %></div><% end %>
+      <% if flash[:alert] %><div class="alert"><%= flash[:alert] %></div><% end %>
+      <%= yield %>
+    </main>
+  </body>
+</html>

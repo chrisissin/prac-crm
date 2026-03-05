@@ -1,0 +1,12 @@
+<h1><%= @activity.subject %></h1>
+<div class="card">
+  <p><strong>Type:</strong> <%= @activity.activity_type.titleize %></p>
+  <p><strong>Status:</strong> <%= @activity.status.titleize %></p>
+  <p><strong>Due:</strong> <%= @activity.due_at&.strftime("%Y-%m-%d %H:%M") || "-" %></p>
+  <p><strong>Related:</strong> <%= link_to "#{@activity.activityable_type} ##{@activity.activityable_id}", polymorphic_path(@activity.activityable) rescue "—" %></p>
+  <p><strong>Description:</strong> <%= simple_format(@activity.description) || "-" %></p>
+  <p>
+    <%= link_to "Edit", edit_activity_path(@activity), class: "btn btn-primary" %>
+    <%= button_to "Delete", @activity, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+  </p>
+</div>
