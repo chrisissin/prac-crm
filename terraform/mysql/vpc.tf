@@ -11,7 +11,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-# Public subnets (route to IGW) - for bastion and NAT gateways
+# Public subnets (route to IGW) - for bastion, NAT, and EKS Load Balancer
 resource "aws_subnet" "public" {
   count                   = length(var.public_subnet_cidrs)
   vpc_id                  = aws_vpc.main.id
@@ -20,7 +20,9 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "${local.name_prefix}-public-${count.index + 1}"
+    Name                                 = "${local.name_prefix}-public-${count.index + 1}"
+    "kubernetes.io/cluster/${local.eks_cluster_name}" = "shared"
+    "kubernetes.io/role/elb"             = "1"
   }
 }
 

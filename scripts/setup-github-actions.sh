@@ -79,7 +79,7 @@ case "$MODE" in
     set_secret AWS_ACCOUNT_ID "AWS account ID"
     set_secret AWS_ACCESS_KEY_ID "AWS access key"
     set_secret AWS_SECRET_ACCESS_KEY "AWS secret key"
-    set_secret_default AWS_REGION "ap-northeast-2"
+    set_secret_default AWS_REGION "us-west-1"
     ;;
   --infra-mysql)
     echo "==> Setting Infrastructure MySQL secrets..."
@@ -90,8 +90,8 @@ case "$MODE" in
     set_secret_prompt TF_VAR_MYSQL_REPLICATION_PASSWORD "Replication password"
     set_secret_prompt TF_VAR_MYSQL_APP_PASSWORD "App DB password"
     set_secret_prompt TF_VAR_MYSQL_DATADOG_PASSWORD "Datadog DBM password (optional)"
-    set_secret_default TF_VAR_AVAILABILITY_ZONES '["ap-northeast-2a","ap-northeast-2b"]'
-    set_secret_default AWS_REGION "ap-northeast-2"
+    set_secret_default TF_VAR_AVAILABILITY_ZONES '["us-west-1a","us-west-1b"]'
+    set_secret_default AWS_REGION "us-west-1"
     ;;
   --infra-datadog)
     echo "==> Setting Infrastructure Datadog secrets..."
@@ -102,7 +102,7 @@ case "$MODE" in
     set_secret_prompt MYSQL_DATADOG_PASSWORD "Datadog MySQL user password"
     set_secret_prompt AWS_ACCESS_KEY_ID "AWS access key"
     set_secret_prompt AWS_SECRET_ACCESS_KEY "AWS secret key"
-    set_secret_default AWS_REGION "ap-northeast-2"
+    set_secret_default AWS_REGION "us-west-1"
     ;;
   --all)
     echo "==> Setting all secrets (interactive)..."

@@ -1,0 +1,230 @@
+{
+  "version": 4,
+  "terraform_version": "1.10.5",
+  "serial": 320,
+  "lineage": "d156d8be-3d58-ba3f-17e4-d5afcab86005",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_internet_gateway",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-2:037302670564:internet-gateway/igw-0b1eec25f8cbfc249",
+            "id": "igw-0b1eec25f8cbfc249",
+            "owner_id": "037302670564",
+            "tags": {
+              "Name": "crm-prod-igw"
+            },
+            "tags_all": {
+              "Environment": "prod",
+              "ManagedBy": "Terraform",
+              "Name": "crm-prod-igw",
+              "Project": "crm"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0290c94596af52718"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "private",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-2:037302670564:subnet/subnet-0305293db7d2a9e46",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "ap-northeast-2a",
+            "availability_zone_id": "apne2-az1",
+            "cidr_block": "10.0.1.0/24",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-0305293db7d2a9e46",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": false,
+            "outpost_arn": "",
+            "owner_id": "037302670564",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "Name": "crm-prod-private-1"
+            },
+            "tags_all": {
+              "Environment": "prod",
+              "ManagedBy": "Terraform",
+              "Name": "crm-prod-private-1",
+              "Project": "crm"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0290c94596af52718"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-2:037302670564:subnet/subnet-09fc26a3efabbd648",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "ap-northeast-2b",
+            "availability_zone_id": "apne2-az2",
+            "cidr_block": "10.0.2.0/24",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-09fc26a3efabbd648",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": false,
+            "outpost_arn": "",
+            "owner_id": "037302670564",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "Name": "crm-prod-private-2"
+            },
+            "tags_all": {
+              "Environment": "prod",
+              "ManagedBy": "Terraform",
+              "Name": "crm-prod-private-2",
+              "Project": "crm"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0290c94596af52718"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "public",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-2:037302670564:subnet/subnet-01fdd507316aad237",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "ap-northeast-2a",
+            "availability_zone_id": "apne2-az1",
+            "cidr_block": "10.0.100.0/24",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-01fdd507316aad237",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": true,
+            "outpost_arn": "",
+            "owner_id": "037302670564",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "Name": "crm-prod-public-1",
+              "kubernetes.io/cluster/crm-prod-eks": "shared",
+              "kubernetes.io/role/elb": "1"
+            },
+            "tags_all": {
+              "Environment": "prod",
+              "ManagedBy": "Terraform",
+              "Name": "crm-prod-public-1",
+              "Project": "crm",
+              "kubernetes.io/cluster/crm-prod-eks": "shared",
+              "kubernetes.io/role/elb": "1"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0290c94596af52718"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-2:037302670564:vpc/vpc-0290c94596af52718",
+            "assign_generated_ipv6_cidr_block": false,
+            "cidr_block": "10.0.0.0/16",
+            "default_network_acl_id": "acl-0a630710d23885f58",
+            "default_route_table_id": "rtb-033bad512399b3910",
+            "default_security_group_id": "sg-034b4012ef709d01a",
+            "dhcp_options_id": "dopt-0f5980f5ce53be59d",
+            "enable_dns_hostnames": true,
+            "enable_dns_support": true,
+            "enable_network_address_usage_metrics": false,
+            "id": "vpc-0290c94596af52718",
+            "instance_tenancy": "default",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_association_id": "",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_network_border_group": "",
+            "ipv6_ipam_pool_id": "",
+            "ipv6_netmask_length": 0,
+            "main_route_table_id": "rtb-033bad512399b3910",
+            "owner_id": "037302670564",
+            "tags": {
+              "Name": "crm-prod-vpc"
+            },
+            "tags_all": {
+              "Environment": "prod",
+              "ManagedBy": "Terraform",
+              "Name": "crm-prod-vpc",
+              "Project": "crm"
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

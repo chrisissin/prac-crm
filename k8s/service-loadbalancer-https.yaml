@@ -1,0 +1,40 @@
+# HTTPS LoadBalancer - TLS termination at ELB (requires ACM certificate)
+#
+# Prerequisites:
+#   1. Domain name (e.g. crm.example.com) - ACM cannot issue certs for *.elb.amazonaws.com
+#   2. ACM certificate: aws acm request-certificate --domain-name crm.example.com --validation-method DNS ...
+#   3. Validate cert (DNS CNAME to ACM validation record)
+#   4. DNS: CNAME crm.example.com -> <ELB hostname from kubectl get svc crm-public -n crm>
+#
+# Apply: sed "s|ACM_CERT_ARN_PLACEHOLDER|$(aws acm list-certificates --query 'CertificateSummaryList[0].CertificateArn' --output text)|g" \
+#        k8s/service-loadbalancer-https.yaml | kubectl apply -f -
+#
+# Or set ACM_CERT_ARN and use setup-aws.sh (it will apply this when ACM_CERT_ARN is set)
+apiVersion: v1
+kind: Service
+metadata:
+  name: crm-public
+  namespace: crm
+  labels:
+    app: crm
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-protocol: TCP
+    # TLS termination: ACM certificate ARN (must be in same region as EKS)
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: ACM_CERT_ARN_PLACEHOLDER
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
+    # Backend receives HTTP (TLS terminated at ELB)
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+      name: http
+    - port: 443
+      targetPort: 3000
+      protocol: TCP
+      name: https
+  selector:
+    app: crm

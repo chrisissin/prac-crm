@@ -1,4 +1,4 @@
-aws_region   = "ap-northeast-2"
+aws_region   = "us-west-1"
 project_name = "crm"
 environment  = "prod"
 

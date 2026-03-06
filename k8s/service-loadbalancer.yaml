@@ -7,6 +7,11 @@ metadata:
   namespace: crm
   labels:
     app: crm
+  annotations:
+    # Internet-facing in public subnets (subnets tagged kubernetes.io/role/elb=1)
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    # TCP health check (avoids HTTP/TLS issues; ELB checks port is reachable)
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-protocol: TCP
 spec:
   type: LoadBalancer
   ports:

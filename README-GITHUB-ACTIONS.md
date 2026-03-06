@@ -39,11 +39,11 @@ Add these to push the Docker image to ECR on push to `main`:
 | `AWS_ACCOUNT_ID` | `aws sts get-caller-identity --query Account --output text` |
 | `AWS_ACCESS_KEY_ID` | IAM user or role access key |
 | `AWS_SECRET_ACCESS_KEY` | IAM user or role secret key |
-| `AWS_REGION` | e.g. `ap-northeast-2` |
+| `AWS_REGION` | e.g. `us-west-1` |
 
 Create the ECR repository first:
 ```bash
-aws ecr create-repository --repository-name crm --region ap-northeast-2
+aws ecr create-repository --repository-name crm --region us-west-1
 ```
 
 ### Infrastructure – MySQL Apply – Optional
@@ -52,13 +52,13 @@ aws ecr create-repository --repository-name crm --region ap-northeast-2
 |--------|-------------|
 | `AWS_ACCESS_KEY_ID` | AWS credentials |
 | `AWS_SECRET_ACCESS_KEY` | AWS credentials |
-| `AWS_REGION` | e.g. `ap-northeast-2` |
+| `AWS_REGION` | e.g. `us-west-1` |
 | `TF_VAR_SSH_PUBLIC_KEY` | Contents of `~/.ssh/id_rsa.pub` |
 | `TF_VAR_MYSQL_ROOT_PASSWORD` | MySQL root password |
 | `TF_VAR_MYSQL_REPLICATION_PASSWORD` | Replication user password |
 | `TF_VAR_MYSQL_APP_PASSWORD` | App database user password |
 | `TF_VAR_MYSQL_DATADOG_PASSWORD` | Datadog DBM user password (or leave empty) |
-| `TF_VAR_AVAILABILITY_ZONES` | `["ap-northeast-2a","ap-northeast-2b"]` (adjust for your region) |
+| `TF_VAR_AVAILABILITY_ZONES` | `["us-west-1a","us-west-1b"]` (adjust for your region) |
 
 ### Infrastructure – Datadog Apply – Optional
 
@@ -80,7 +80,7 @@ For Infrastructure apply, Terraform state must persist. Add to `terraform/mysql/
 backend "s3" {
   bucket         = "your-terraform-state-bucket"
   key            = "mysql/terraform.tfstate"   # or datadog/terraform.tfstate
-  region         = "ap-northeast-2"
+  region         = "us-west-1"
   encrypt        = true
   dynamodb_table = "terraform-locks"
 }

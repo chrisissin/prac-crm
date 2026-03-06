@@ -22,7 +22,7 @@ Interactive menu: list profiles, verify credentials, add profile, set for sessio
 |--------|---------------|
 | **AWS Access Key ID** | From IAM → Users → Your user → Security credentials → Create access key. Copy the Access Key ID (starts with `AKIA...`). |
 | **AWS Secret Access Key** | Shown once when you create the access key. Copy immediately — AWS won't show it again. If lost, create a new access key. |
-| **Default region name** | AWS region. Use `ap-northeast-2` (Seoul) for this project, or `us-east-1`, `ap-northeast-1`, etc. |
+| **Default region name** | AWS region. Use `us-west-1` for this project, or `us-east-1`, `ap-northeast-2`, etc. |
 | **Default output format** | `json` (for scripts), `table` (for terminals), or leave blank (defaults to json). |
 
 **Get access keys:** IAM Console → Users → [your user] → Security credentials → Access keys → Create access key. Choose "Command Line Interface (CLI)" and copy both values.
@@ -59,10 +59,10 @@ Edit `~/.aws/config`:
 
 ```ini
 [default]
-region = ap-northeast-2
+region = us-west-1
 
 [profile work]
-region = ap-northeast-2
+region = us-west-1
 
 [profile personal]
 region = us-east-1

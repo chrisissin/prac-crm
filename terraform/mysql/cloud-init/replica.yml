@@ -2,6 +2,12 @@
 # MySQL 5.6 Replica - Cloud Init
 # Connects to master and configures replication
 
+# Prefer IPv4 for apt to avoid NAT/dual-stack issues in private subnets
+write_files:
+  - path: /etc/apt/apt.conf.d/99force-ipv4
+    content: 'Acquire::ForceIPv4 "true";'
+    permissions: '0644'
+
 packages:
   - curl
   - wget
@@ -11,6 +17,16 @@ packages:
   - xfsprogs
 
 runcmd:
+  # Wait for NAT / outbound internet (private subnet; NAT may take time to propagate)
+  - |
+    for i in $(seq 1 30); do
+      if curl -s --connect-timeout 5 -o /dev/null https://aws.amazon.com 2>/dev/null || apt-get update -qq 2>/dev/null; then
+        break
+      fi
+      echo "Waiting for network (attempt $i/30)..."
+      sleep 10
+    done
+
   # Attach and mount EBS data volume
   - |
     until [ -b /dev/nvme1n1 ] || [ -b /dev/xvdf ]; do sleep 2; done

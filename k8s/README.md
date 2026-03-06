@@ -15,7 +15,7 @@ Kubernetes manifests for deploying the Rails CRM to Amazon EKS.
 
 ```bash
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-AWS_REGION=ap-northeast-2
+AWS_REGION=us-west-1
 ECR_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/crm
 
 aws ecr create-repository --repository-name crm --region $AWS_REGION 2>/dev/null || true

@@ -1,12 +1,12 @@
 # Copy to terraform.tfvars and fill in values
 # Do not commit terraform.tfvars with secrets!
 
-aws_region   = "ap-northeast-2"
+aws_region   = "us-west-1"
 environment  = "prod"
 project_name = "crm"
 
 # Get AZs: aws ec2 describe-availability-zones --query 'AvailabilityZones[*].ZoneName'
-availability_zones = ["ap-northeast-2a", "ap-northeast-2b"]
+availability_zones = ["us-west-1a", "us-west-1c"]
 
 # SSH public key - set via: export TF_VAR_ssh_public_key="$(cat ~/.ssh/id_rsa.pub)"
 # Or uncomment and paste your key (single line): ssh_public_key = "ssh-rsa AAAA... your@email.com"

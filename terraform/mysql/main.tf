@@ -15,7 +15,7 @@ terraform {
   # backend "s3" {
   #   bucket         = "your-terraform-state-bucket"
   #   key            = "mysql/terraform.tfstate"
-  #   region         = "ap-northeast-2"
+  #   region         = "us-west-1"
   #   encrypt        = true
   #   dynamodb_table = "terraform-locks"
   # }
@@ -34,5 +34,6 @@ provider "aws" {
 }
 
 locals {
-  name_prefix = "${var.project_name}-${var.environment}"
+  name_prefix       = "${var.project_name}-${var.environment}"
+  eks_cluster_name  = "${local.name_prefix}-eks"
 }

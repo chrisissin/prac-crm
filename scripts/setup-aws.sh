@@ -3,12 +3,18 @@
 # Requires: AWS CLI, Terraform, kubectl, Docker
 #
 # Set before running:
-  export TF_VAR_mysql_root_password="abc"
-  export TF_VAR_mysql_replication_password="abc"
-  export TF_VAR_mysql_app_password="abc"
-  export TF_VAR_ssh_public_key="$(cat ~/.ssh/id_rsa.pub)"
+#   export TF_VAR_mysql_root_password="<secure>"
+#   export TF_VAR_mysql_replication_password="<secure>"
+#   export TF_VAR_mysql_app_password="<secure>"
+#   export TF_VAR_ssh_public_key="$(cat ~/.ssh/id_rsa.pub)"
 #
-# Optional: AWS_PROFILE, AWS_REGION (default ap-northeast-2), SKIP_TERRAFORM, SKIP_EKS, SKIP_K8S
+# Optional: AWS_PROFILE, AWS_REGION (default us-west-1), SKIP_TERRAFORM, SKIP_EKS, SKIP_K8S
+# Optional: Load Balancer HTTP vs HTTPS
+#   HTTP (default): No cert needed. Use when you have no domain or for dev/test.
+#   HTTPS: Set ACM_CERT_ARN to a validated ACM certificate ARN in the same region.
+#     export ACM_CERT_ARN="arn:aws:acm:us-west-1:ACCOUNT:certificate/ID"
+#   Force HTTP: Set HTTP_ONLY=1 to use HTTP even if ACM_CERT_ARN is set.
+#     export HTTP_ONLY=1
 #
 # Use a specific AWS profile:
 #   export AWS_PROFILE=my-profile
@@ -20,13 +26,18 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-AWS_REGION="${AWS_REGION:-ap-northeast-2}"
+AWS_REGION="${AWS_REGION:-us-west-1}"
 # Give plugins more time to start (helps on Apple Silicon / Rosetta)
 export TF_PLUGIN_TIMEOUT="${TF_PLUGIN_TIMEOUT:-300}"
 
 echo "==> CRM AWS Setup"
 echo "    Project root: $PROJECT_ROOT"
 echo "    Region: $AWS_REGION"
+if [[ "${HTTP_ONLY:-}" == "1" || -z "${ACM_CERT_ARN:-}" ]]; then
+  echo "    Load Balancer: HTTP (no TLS)"
+else
+  echo "    Load Balancer: HTTPS (ACM certificate)"
+fi
 echo ""
 
 # Check required tools
@@ -74,7 +85,10 @@ if [[ "${SKIP_TERRAFORM:-}" != "1" ]]; then
 else
   echo "==> [1/8] Skipping Terraform (SKIP_TERRAFORM=1)"
   MYSQL_HOST="${DATABASE_HOST:-}"
-  [[ -n "$MYSQL_HOST" ]] || { echo "    Set DATABASE_HOST when skipping Terraform"; exit 1; }
+  if [[ -z "$MYSQL_HOST" ]]; then
+    echo "    Set DATABASE_HOST when skipping Terraform"
+    exit 1
+  fi
 fi
 
 # Phase 2: Terraform (EKS)
@@ -107,8 +121,9 @@ if [[ "${SKIP_EKS:-}" != "1" ]]; then
   echo "==> [3/8] Configuring kubectl..."
   aws eks update-kubeconfig --region "$AWS_REGION" --name "$EKS_CLUSTER_NAME"
   echo "    Waiting for EKS nodes to be ready..."
+  JSONPATH_READY='{.items[*].status.conditions[?(@.type=="Ready")].status}'
   for _ in $(seq 1 30); do
-    READY=$(kubectl get nodes -o jsonpath='{.items[*].status.conditions[?(@.type=="Ready")].status}' 2>/dev/null | tr ' ' '\n' | grep -c True || true)
+    READY=$(kubectl get nodes -o jsonpath="$JSONPATH_READY" 2>/dev/null | tr ' ' '\n' | grep -c True || true)
     [[ "${READY:-0}" -ge 1 ]] && break
     sleep 10
   done
@@ -122,7 +137,7 @@ AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 ECR_URI="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/crm"
 
 aws ecr create-repository --repository-name crm --region "$AWS_REGION" 2>/dev/null || true
-docker build -t "$ECR_URI:latest" "$PROJECT_ROOT/crm"
+docker build --platform linux/amd64 -t "$ECR_URI:latest" "$PROJECT_ROOT/crm"
 aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$ECR_URI"
 docker push "$ECR_URI:latest"
 
@@ -152,15 +167,53 @@ kubectl create secret generic crm-secrets -n crm \
 echo ""
 echo "==> [6/8] Deploying to EKS..."
 cd "$PROJECT_ROOT"
-IMAGE_PLACEHOLDER="123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/crm"
+IMAGE_PLACEHOLDER="123456789012.dkr.ecr.us-west-1.amazonaws.com/crm"
+
+# HTTP vs HTTPS: use HTTPS only when ACM_CERT_ARN is set and HTTP_ONLY is not set
+USE_HTTPS=false
+if [[ -n "${ACM_CERT_ARN:-}" && "${HTTP_ONLY:-}" != "1" ]]; then
+  if [[ ! "$ACM_CERT_ARN" =~ ^arn:aws:acm: ]]; then
+    echo "Error: ACM_CERT_ARN should be an ACM certificate ARN (e.g. arn:aws:acm:region:account:certificate/id)"
+    exit 1
+  fi
+  if [[ "$ACM_CERT_ARN" == *"xxxxxxxx"* ]]; then
+    echo "Error: ACM_CERT_ARN is still the placeholder. Get a real ARN:"
+    echo "  aws acm list-certificates --region $AWS_REGION --query 'CertificateSummaryList[*].[DomainName,CertificateArn]' --output table"
+    exit 1
+  fi
+  USE_HTTPS=true
+  echo "    Using HTTPS (ACM certificate)"
+else
+  echo "    Using HTTP (set ACM_CERT_ARN for HTTPS, or HTTP_ONLY=1 to force HTTP)"
+fi
 
 kubectl apply -f k8s/namespace.yaml
 kubectl apply -f k8s/configmap.yaml
 sed "s|$IMAGE_PLACEHOLDER|$ECR_URI|g" k8s/deployment.yaml | kubectl apply -f -
 kubectl apply -f k8s/service.yaml
-kubectl apply -f k8s/service-loadbalancer.yaml
+if [[ "$USE_HTTPS" == "true" ]]; then
+  kubectl delete svc crm-public -n crm 2>/dev/null || true
+  sed "s|ACM_CERT_ARN_PLACEHOLDER|$ACM_CERT_ARN|g" k8s/service-loadbalancer-https.yaml | kubectl apply -f -
+  kubectl patch configmap crm-config -n crm --type merge -p '{"data":{"FORCE_SSL":"true"}}'
+  kubectl rollout restart deployment/crm -n crm
+else
+  kubectl apply -f k8s/service-loadbalancer.yaml
+  kubectl patch configmap crm-config -n crm --type merge -p '{"data":{"FORCE_SSL":"false"}}' 2>/dev/null || true
+fi
 kubectl apply -f k8s/ingress.yaml 2>/dev/null || true
 kubectl apply -f k8s/hpa.yaml
+
+# Phase 6b: Ensure MySQL crm_app user exists (cloud-init runs async; may not finish before we migrate)
+if [[ "${SKIP_TERRAFORM:-}" != "1" ]]; then
+  echo ""
+  echo "==> [6b/8] Ensuring MySQL crm_app user exists..."
+  if "$PROJECT_ROOT/scripts/fix-mysql-user.sh" 2>/dev/null; then
+    echo "    MySQL crm_app user ready"
+  else
+    echo "    Note: If migrations fail with 'Access denied', run ./scripts/fix-mysql-user.sh"
+    echo "    Or SSH to MySQL master (see README-AWS.md troubleshooting)"
+  fi
+fi
 
 # Phase 7: Migrations
 echo ""
@@ -173,10 +226,7 @@ kubectl wait --for=condition=complete job/crm-db-migrate -n crm --timeout=180s |
 echo ""
 echo "==> [8/8] Creating admin user..."
 sleep 5
-kubectl exec deployment/crm -n crm -- bundle exec rails runner "
-  user = User.find_or_create_by!(email: 'admin@crm.local') { |u| u.password = 'changeme'; u.name = 'Admin' }
-  user.update!(password: 'changeme', name: 'Admin')
-" 2>/dev/null || echo "    (Run manually when pods are ready: kubectl exec deployment/crm -n crm -- bundle exec rails db:seed)"
+kubectl exec deployment/crm -n crm -- bundle exec rails runner 'user = User.find_or_create_by!(email: "admin@crm.local") { |u| u.password = "changeme"; u.name = "Admin" }; user.update!(password: "changeme", name: "Admin")' 2>/dev/null || echo "    Run manually: kubectl exec deployment/crm -n crm -- bundle exec rails db:seed"
 
 echo ""
 echo "==> AWS setup complete!"
@@ -190,7 +240,11 @@ for _ in $(seq 1 30); do
   sleep 5
 done
 if [[ -n "$CRM_HOST" ]]; then
-  echo "  CRM URL (public): http://$CRM_HOST"
+  if [[ "$USE_HTTPS" == "true" ]]; then
+    echo "  CRM URL (HTTPS): https://<your-domain>  (CNAME to $CRM_HOST)"
+  else
+    echo "  CRM URL (public): http://$CRM_HOST"
+  fi
 else
   echo "  CRM URL: run 'kubectl get svc crm-public -n crm' (EXTERNAL-IP may take 1–2 min)"
 fi

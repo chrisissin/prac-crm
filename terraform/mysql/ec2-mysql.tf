@@ -53,6 +53,9 @@ resource "aws_instance" "mysql_master" {
 
   user_data_replace_on_change = true
 
+  # Wait for NAT so cloud-init can apt-get (private subnet needs NAT for internet)
+  depends_on = [aws_nat_gateway.main]
+
   tags = {
     Name   = "${local.name_prefix}-mysql-master"
     Role   = "mysql-master"

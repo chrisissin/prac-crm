@@ -19,7 +19,36 @@ Ensure `terraform/mysql/terraform.tfvars` has `availability_zones` and `ssh_publ
 2. **EKS** – Kubernetes cluster + node group in that VPC
 3. **Deploy** – Build image, push to ECR, deploy CRM to EKS, run migrations
 
+#### HTTP vs HTTPS (Load Balancer)
+
+| Mode | When to use | Config |
+|------|-------------|--------|
+| **HTTP** (default) | No domain, dev/test, or quick setup | Nothing. CRM is reachable at `http://<elb-hostname>`. |
+| **HTTPS** | You own a domain with a validated ACM certificate | `export ACM_CERT_ARN="arn:aws:acm:REGION:ACCOUNT:certificate/ID"` |
+| **Force HTTP** | Override `ACM_CERT_ARN` if set (e.g. invalid cert) | `export HTTP_ONLY=1` |
+
+```bash
+# HTTP (default) – no domain needed
+./scripts/setup-aws.sh
+
+# HTTPS – requires ACM cert in same region as cluster
+export ACM_CERT_ARN="arn:aws:acm:us-west-1:037302670564:certificate/xxx"
+./scripts/setup-aws.sh
+
+# Force HTTP even if ACM_CERT_ARN is in environment
+export HTTP_ONLY=1
+./scripts/setup-aws.sh
+```
+
 Optional: `SKIP_TERRAFORM=1` (and set `DATABASE_HOST`) to skip MySQL. `SKIP_EKS=1` (and set `EKS_CLUSTER_NAME`) to skip EKS creation.
+
+### Teardown (delete everything)
+
+```bash
+./scripts/teardown-aws.sh
+```
+
+Then to redeploy from scratch: `./scripts/setup-aws.sh`
 
 ## Architecture
 
@@ -56,12 +85,14 @@ The script uses your **default** AWS CLI credentials. To target a specific accou
 |--------|-------|
 | **Named profile** | `export AWS_PROFILE=my-profile` before running |
 | **Explicit creds** | `export AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=...` |
-| **Region** | `export AWS_REGION=us-east-1` (default: `ap-northeast-2`) |
+| **Region** | `export AWS_REGION=us-east-1` (default: `us-west-1`) |
+| **HTTPS** | `export ACM_CERT_ARN="arn:aws:acm:region:account:certificate/id"` (cert must be in same region) |
+| **HTTP only** | `export HTTP_ONLY=1` (force HTTP even if ACM_CERT_ARN is set) |
 
 Example:
 ```bash
 export AWS_PROFILE=production
-export AWS_REGION=ap-northeast-2
+export AWS_REGION=us-west-1
 ./scripts/setup-aws.sh
 ```
 
@@ -88,7 +119,7 @@ cp terraform.tfvars.example terraform.tfvars
 Edit `terraform.tfvars`:
 
 ```hcl
-availability_zones = ["ap-northeast-2a", "ap-northeast-2b"]
+availability_zones = ["us-west-1a", "us-west-1c"]
 # Get with: aws ec2 describe-availability-zones --query 'AvailabilityZones[*].ZoneName' --output text
 
 ssh_public_key = "ssh-rsa AAAA... your@email.com"
@@ -132,7 +163,7 @@ A bastion EC2 is created in a public subnet. Use it to SSH and run kubectl from 
 ssh ubuntu@$(cd terraform/mysql && terraform output -raw bastion_public_ip)
 
 # On bastion: kubectl is pre-installed. Configure kubeconfig if not done at boot:
-aws eks update-kubeconfig --region ap-northeast-2 --name <your-eks-cluster>
+aws eks update-kubeconfig --region us-west-1 --name <your-eks-cluster>
 kubectl get svc -n crm   # Get CRM LoadBalancer URL
 ```
 
@@ -162,7 +193,7 @@ Ensure your EKS cluster is in the **same VPC** as MySQL (or has network access t
 
 ```bash
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-AWS_REGION=ap-northeast-2
+AWS_REGION=us-west-1
 ECR_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/crm
 
 aws ecr create-repository --repository-name crm --region $AWS_REGION 2>/dev/null || true
@@ -236,6 +267,48 @@ Login: `admin@crm.local` / `changeme`
 
 **If local kubectl times out**, SSH into the bastion and run the same commands there.
 
+### 2.8 HTTPS / TLS Termination at Load Balancer
+
+To serve HTTPS, you need an ACM certificate and a domain name. ACM cannot issue certs for the default ELB hostname (`*.elb.amazonaws.com`).
+
+**1. Request an ACM certificate** (for your domain, e.g. `crm.example.com`):
+
+```bash
+aws acm request-certificate \
+  --domain-name crm.example.com \
+  --validation-method DNS \
+  --region us-west-1
+```
+
+**2. Validate the certificate** – add the DNS CNAME record shown in ACM (Console → Certificate Manager) to your domain’s DNS.
+
+**3. Point your domain to the Load Balancer** – after the ELB is created, add:
+
+```
+crm.example.com  CNAME  <elb-hostname-from-kubectl-get-svc>
+```
+
+**4. Apply the HTTPS service** with your certificate ARN:
+
+```bash
+ACM_CERT_ARN=$(aws acm list-certificates --region us-west-1 \
+  --query 'CertificateSummaryList[?DomainName==`crm.example.com`].CertificateArn' --output text)
+
+kubectl delete svc crm-public -n crm  # remove HTTP-only LB
+sed "s|ACM_CERT_ARN_PLACEHOLDER|$ACM_CERT_ARN|g" k8s/service-loadbalancer-https.yaml | kubectl apply -f -
+kubectl patch configmap crm-config -n crm --type merge -p '{"data":{"FORCE_SSL":"true"}}'
+kubectl rollout restart deployment/crm -n crm
+```
+
+Or use the setup script with `ACM_CERT_ARN`:
+
+```bash
+export ACM_CERT_ARN="arn:aws:acm:us-west-1:ACCOUNT:certificate/ID"
+./scripts/setup-aws.sh
+```
+
+Then access `https://crm.example.com`.
+
 ---
 
 ## Phase 3: Operations
@@ -291,6 +364,8 @@ See `terraform/datadog/README.md` for details.
 | Pods pending | `kubectl describe pod -n crm` – check resources, image pull |
 | 502 from ALB | Pods not ready; check `kubectl get pods -n crm` and logs |
 | Migration job fails | Verify DATABASE_HOST, DATABASE_PASSWORD in secret |
+| **500 after login** | `ConnectionNotEstablished` → MySQL unreachable. Verify: `terraform output mysql_master_private_ip` matches K8s secret. Update secret and restart: `kubectl create secret generic crm-secrets -n crm ... --dry-run=client -o yaml \| kubectl apply -f -` then `kubectl rollout restart deployment/crm -n crm` |
+| **MySQL not running / Unit mysql.service could not be found** | Cloud-init apt failed (private subnet had no internet). See *MySQL cloud-init recovery* below. |
 | **Terraform: timeout while waiting for plugin to start** | See below |
 | **Terraform: UnauthorizedOperation / ec2:DescribeImages** | See IAM permissions below |
 | **Terraform: collecting instance settings: couldn't find resource** | See below |
@@ -351,7 +426,7 @@ Attach these managed policies to your IAM user:
 - `AmazonEKSClusterPolicy` (for K8s/EKS phase)
 
 **Option 3 – Workaround for `ec2:DescribeImages` only:**  
-If you only hit DescribeImages, use a fixed AMI: set `mysql_master_ami = "ami-XXX"` in `terraform.tfvars`. See fallback AMIs in `ec2-mysql.tf` for ap-northeast-2.
+If you only hit DescribeImages, use a fixed AMI: set `mysql_master_ami = "ami-XXX"` in `terraform.tfvars`. See fallback AMIs in `ec2-mysql.tf` for us-west-1.
 
 ### Terraform: "collecting instance settings: couldn't find resource"
 
@@ -365,3 +440,55 @@ terraform apply -auto-approve
 ```
 
 If the fallback AMI is invalid, set `mysql_master_ami` in `terraform.tfvars` to a current Ubuntu 20.04 AMI from [cloud-images.ubuntu.com/locator/ec2](https://cloud-images.ubuntu.com/locator/ec2).
+
+### MySQL cloud-init recovery (apt failed, no internet)
+
+If the MySQL master (or replicas) show `Unit mysql.service could not be found`, `apt` failed because the private subnet had no outbound internet when cloud-init ran (NAT not ready or route delayed).
+
+**Fix: recreate the MySQL instance(s)** so cloud-init runs again with network available. Terraform now depends on NAT gateways before creating MySQL instances.
+
+```bash
+cd terraform/mysql
+terraform taint aws_instance.mysql_master
+terraform taint 'aws_instance.mysql_replica[0]'   # if replicas exist
+terraform apply -auto-approve
+```
+
+Then run `./scripts/setup-aws.sh` (or only the deploy phase) to ensure migrations run. If `terraform taint` is unavailable in your Terraform version, use `terraform apply -replace=aws_instance.mysql_master -auto-approve`.
+
+### Access denied for crm_app / 500 after login / Migration job fails
+
+If migrations fail with `Access denied for user 'crm_app'@'...'` or login returns 500, cloud-init may not have created the `crm_app` user (timing or MySQL 8 auth plugin mismatch).
+
+**Option 1 – Script (SSM):**
+```bash
+export TF_VAR_mysql_root_password="<your_root_pw>"
+export TF_VAR_mysql_app_password="<your_app_pw>"
+./scripts/fix-mysql-user.sh
+```
+
+**Option 2 – Manual via bastion:**
+```bash
+# SSH to MySQL master
+ssh -A -J ubuntu@<bastion_ip> ubuntu@<mysql_master_ip>
+# From terraform: bastion_ip=$(cd terraform/mysql && terraform output -raw bastion_public_ip)
+#                mysql_master_ip=$(cd terraform/mysql && terraform output -raw mysql_master_private_ip)
+
+# On the MySQL master:
+sudo mysql -u root -p'<root_pw>' -e "
+CREATE DATABASE IF NOT EXISTS crm_production CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+DROP USER IF EXISTS 'crm_app'@'%';
+CREATE USER 'crm_app'@'%' IDENTIFIED WITH mysql_native_password BY '<app_pw>';
+GRANT ALL PRIVILEGES ON crm_production.* TO 'crm_app'@'%';
+FLUSH PRIVILEGES;
+"
+exit
+```
+
+Then re-run migrations:
+```bash
+kubectl delete job crm-db-migrate -n crm 2>/dev/null || true
+# Use your ECR URI: sed 's|123456789012...|YOUR_ACCOUNT.dkr.ecr.REGION.amazonaws.com/crm|g' k8s/job-db-migrate.yaml | kubectl apply -f -
+kubectl wait --for=condition=complete job/crm-db-migrate -n crm --timeout=180s
+kubectl exec deployment/crm -n crm -- bundle exec rails runner 'User.find_or_create_by!(email: "admin@crm.local") { |u| u.password = "changeme"; u.name = "Admin" }.update!(password: "changeme", name: "Admin")'
+```

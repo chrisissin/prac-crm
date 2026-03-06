@@ -12,13 +12,13 @@
 #   export MYSQL_MASTER_HOST="10.0.1.50"           # auto from terraform/mysql if not set
 #   export MYSQL_REPLICA_HOSTS="10.0.2.50 10.0.2.51"  # space-separated
 #   export DD_SITE="datadoghq.com"                 # or datadoghq.eu, us5.datadoghq.com
-#   export AWS_REGION="ap-northeast-2"
+#   export AWS_REGION="us-west-1"
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 DD_SITE="${DD_SITE:-datadoghq.com}"
-AWS_REGION="${AWS_REGION:-ap-northeast-2}"
+AWS_REGION="${AWS_REGION:-us-west-1}"
 
 echo "==> Datadog Setup"
 echo "    Project root: $PROJECT_ROOT"
