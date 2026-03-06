@@ -7,9 +7,11 @@ RUN apk add --no-cache build-base mariadb-dev yaml-dev
 WORKDIR /app
 
 COPY Gemfile* ./
+# Add amd64 platform when building for EKS (--platform linux/amd64)
+RUN bundle lock --add-platform x86_64-linux-musl
+# Install all groups so db:migrate job (and any rails command) can run
 RUN bundle config set --local deployment 'true' && \
-    bundle config set --local without 'development test' && \
-    bundle install -j4
+    BUNDLE_WITHOUT= bundle install -j4
 
 COPY . .
 RUN SECRET_KEY_BASE=dummy bundle exec rails assets:precompile 2>/dev/null || \
@@ -18,7 +20,7 @@ RUN SECRET_KEY_BASE=dummy bundle exec rails assets:precompile 2>/dev/null || \
 # Production image
 FROM ${RUBY_IMAGE}
 
-RUN apk add --no-cache mariadb-client tzdata yaml
+RUN apk add --no-cache mariadb-client mariadb-connector-c tzdata yaml
 
 WORKDIR /app
 
